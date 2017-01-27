@@ -14,7 +14,8 @@ file '/var/jenkins_home/directions.txt' do
   action :create
 end
 
-file '/var/jenkins_home/builder.txt' do
-  content "#{node['cheftraining']['builder']} built this"
-  action :create
+template '/var/jenkins_home/build.txt' do
+  source 'build.txt.erb'
+  variables( :builder => "#{node['cheftraining']['builder']}" )
 end
+

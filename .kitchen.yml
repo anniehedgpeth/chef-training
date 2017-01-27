@@ -23,6 +23,6 @@ suites:
     verifier:
       inspec_tests:
         - test/smoke/default
-    attributes:
-      cheftraining:
-        builder: 'Michael'
+    # attributes:
+    #   cheftraining:
+    #     builder: 'Michael'

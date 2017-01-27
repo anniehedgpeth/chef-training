@@ -19,7 +19,7 @@ describe file('/var/jenkins_home/directions.txt') do
   its('content') { should match /jenkins goes here/ }
 end
 
-describe file('/var/jenkins_home/builder.txt') do
+describe file('/var/jenkins_home/build.txt') do
   it { should exist }
   its('content') { should match /Michael built this/ }
 end
