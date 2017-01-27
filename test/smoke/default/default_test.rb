@@ -14,3 +14,7 @@ describe directory('/var/teamcity') do
   it { should_not exist }
 end
 
+describe file('/var/jenkins_home/directions.txt') do
+  it { should exist }
+  its('content') { should match /jenkins goes here/ }
+end

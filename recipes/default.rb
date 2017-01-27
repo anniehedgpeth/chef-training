@@ -8,3 +8,11 @@ directory '/var/jenkins_home' do
   mode '0755'
   action :create
 end
+
+file '/var/jenkins_home/directions.txt' do
+  content 'jenkins goes here'
+  owner 'root'
+  group 'root'
+  mode '0755'
+  action :create
+end
