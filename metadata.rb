@@ -1,19 +1,10 @@
-name 'chef-training'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+name 'cheftraining'
+maintainer 'Annie Hedgpeth'
+maintainer_email 'annie.hedgpeth@gmail.com'
 license 'all_rights'
-description 'Installs/Configures chef-training'
-long_description 'Installs/Configures chef-training'
+description 'Chef Ttraining'
+long_description 'Just a Little Chef Training'
 version '0.1.0'
 
-# The `issues_url` points to the location where issues for this cookbook are
-# tracked.  A `View Issues` link will be displayed on this cookbook's page when
-# uploaded to a Supermarket.
-#
-# issues_url 'https://github.com/<insert_org_here>/chef-training/issues' if respond_to?(:issues_url)
-
-# The `source_url` points to the development reposiory for this cookbook.  A
-# `View Source` link will be displayed on this cookbook's page when uploaded to
-# a Supermarket.
-#
-# source_url 'https://github.com/<insert_org_here>/chef-training' if respond_to?(:source_url)
+issues_url 'https://github.com/anniehedgpeth/cheftraining/issues'
+source_url 'https://github.com/anniehedgpeth/cheftraining'
