@@ -11,8 +11,10 @@ end
 
 file '/var/jenkins_home/directions.txt' do
   content 'jenkins goes here'
-  owner 'root'
-  group 'root'
-  mode '0755'
+  action :create
+end
+
+file '/var/jenkins_home/builder.txt' do
+  content "#{node['cheftraining']['builder']} built this"
   action :create
 end
