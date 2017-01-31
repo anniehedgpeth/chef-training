@@ -19,10 +19,12 @@ end
 
 execute 'echo' do
   command 'echo ran command > /var/jenkins_home/command.txt'
-  action :run
-  notifies :action, 'remote_file[/var/jenkins_home/drafts]'
+  not_if do ::File.exist?('/var/jenkins_home/command.txt') end
+  # notifies :create, 'remote_file[/var/jenkins_home/1.rb]', :immediately
 end
 
-remote_file '/var/jenkins_home/drafts' do
-  source 'https://github.com/anniehedgpeth/anniehedgpeth.github.io/tree/master/_drafts'
+remote_file '/var/jenkins_home/1.rb' do
+  source 'https://raw.githubusercontent.com/anniehedgpeth/inspec-workshop/master/controls/1.rb'
+  action :nothing
+  subscribes :create, 'execute[echo]', :immediately
 end

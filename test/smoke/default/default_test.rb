@@ -27,3 +27,7 @@ end
 describe file('/var/jenkins_home/author.jpg') do
   it { should exist }
 end
+
+describe file('/var/jenkins_home/1.rb') do
+  it { should exist }
+end
