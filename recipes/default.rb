@@ -1,4 +1,5 @@
 include_recipe 'ubuntu'
+include_recipe 'os-hardening', '~> 1.4.1'
 
 apt_package 'nano'
 

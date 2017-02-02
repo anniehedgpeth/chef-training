@@ -10,3 +10,4 @@ issues_url 'https://github.com/anniehedgpeth/cheftraining/issues'
 source_url 'https://github.com/anniehedgpeth/cheftraining'
 
 depends 'ubuntu', '~> 2.0.0'
+depends 'os-hardening', '~> 1.4.1'
