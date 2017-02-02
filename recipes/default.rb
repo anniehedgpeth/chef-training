@@ -20,7 +20,6 @@ end
 execute 'echo' do
   command 'echo ran command > /var/jenkins_home/command.txt'
   not_if do ::File.exist?('/var/jenkins_home/command.txt') end
-  # notifies :create, 'remote_file[/var/jenkins_home/1.rb]', :immediately
 end
 
 remote_file '/var/jenkins_home/1.rb' do
