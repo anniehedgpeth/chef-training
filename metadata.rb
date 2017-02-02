@@ -9,4 +9,4 @@ version '0.1.0'
 issues_url 'https://github.com/anniehedgpeth/cheftraining/issues'
 source_url 'https://github.com/anniehedgpeth/cheftraining'
 
-depends 'ubuntu'
+depends 'ubuntu', '~> 2.0.0'
